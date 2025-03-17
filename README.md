@@ -99,4 +99,4 @@ To ensure that we can complete all core features of the application in 1 week, w
 ## Wireframes of each page in your application
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
-- ![Wireframe for page 1](/Nando-X-Project/Screenshot 2025-03-17 142633.png) - [Wireframe for home page]
+- ![Wireframe for page 1](/Nando-X-Project/assets/Screenshot%202025-03-17%20142633.png) - [Wireframe for home page]
