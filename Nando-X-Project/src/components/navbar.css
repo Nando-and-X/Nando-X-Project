@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #6ea2d7, #504ec7); /* Dark neutral gradient */
+  color: #000000; /* Light text color for contrast */
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and nav items */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  font-size: 16px;
+  font-weight: 800; /* Bold font */
+}
+
+.navbar a:active {
+  color: #2a87a6; /* Light blue when clicked */
+}
+
+.navbar a, .navbar span {
+  color: #ffffff;
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+.navbar a:hover, .navbar span:hover {
+  color: #add8e6; /* Light blue on hover */
+}
+
+.dropdown-item {
+  background-color: #ffffff; /* Match navbar background */
+  color: #f2f1f1; /* White text for dropdown items */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.dropdown-item:hover {
+  background-color: #505050; /* Slightly lighter background on hover */
+}
+
+.dropdown-menu {
+  background: linear-gradient(90deg, #6ea2d7, #504ec7); /* Same gradient as navbar */
+  border: none; /* Remove border for seamless look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Match navbar shadow */
+}
+
+.dropdown-item {
+  text-decoration: none; /* Remove underline */
+  background-color: black /* Same gradient as navbar */
+}
