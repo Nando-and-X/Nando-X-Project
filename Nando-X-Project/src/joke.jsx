@@ -5,19 +5,22 @@ const URL = "https://sv443.net/jokeapi/v2/";
 function FetchData() {
   const [joke, setJoke] = useState("");
 
-  useEffect(() => {
+  const fetchJokes = () => {
     fetch("https://sv443.net/jokeapi/v2/")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
       }, []);
-  });
+  };
+  useEffect(() => {
+    fetchJokes();
+  }, []);
   return (
     <div className="Joke">
       <h1>Do you want to hear a joke?</h1>
       <div className="buttons">
-        <button type="button">Yes</button>
-        <button type="button">No</button>
+        <button onClick={fetchJokes}>Yes</button>
+        <button>No</button>
       </div>
     </div>
   );
