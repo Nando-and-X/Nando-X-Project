@@ -14,13 +14,12 @@ function CollapsibleNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Forecast</Nav.Link>
-            <Nav.Link href="#pricing">Joke</Nav.Link>
+            <Nav.Link href="#forecast">Forecast</Nav.Link>
+            <Nav.Link href="#joke">Joke</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">GitHub Repo</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Nando's Repo</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">X's Repo</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Docs</NavDropdown.Item>
             </NavDropdown>
           </Nav>
