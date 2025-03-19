@@ -1,16 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import CollapsibleNavbar from './components/Navbar';
-import HomePage from './components/home-page';
-import React from 'react';
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CollapsibleNavbar from "./components/Navbar";
+import HomePage from "./components/home-page";
+import "./App.css";
 
 function App() {
-    // render the collapsible navbar and home page
-    return (
-        <div>
-            <CollapsibleNavbar />
-            <HomePage />
-        </div>
-    );
+
+  return (
+    <div>
+      <CollapsibleNavbar />
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
