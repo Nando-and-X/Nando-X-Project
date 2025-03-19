@@ -1,10 +1,10 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./navbar.css";
 
 function CollapsibleNavbar() {
   return (
@@ -17,8 +17,12 @@ function CollapsibleNavbar() {
             <Nav.Link href="#forecast">Forecast</Nav.Link>
             <Nav.Link href="#joke">Joke</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">GitHub Repo</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Nando's Repo</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">
+                GitHub Repo
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Nando's Repo
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">X's Repo</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Docs</NavDropdown.Item>
             </NavDropdown>
