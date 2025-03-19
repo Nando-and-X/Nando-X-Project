@@ -1,24 +1,35 @@
 import React, { use, useEffect, useState } from "react";
 
-const URL = "https://sv443.net/jokeapi/v2/";
+const URL = "https://v2.jokeapi.dev/joke/Any";
 
 function FetchData() {
   const [joke, setJoke] = useState("");
 
-  useEffect(() => {
-    fetch("https://sv443.net/jokeapi/v2/")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      }, []);
-  });
+  // fetch joke function
+  const fetchJokes = async () => {
+    try {
+      const response = await fetch(URL);
+      const data = await response.json();
+
+      if (data.type === "single") {
+        setJoke(data.joke);
+      } else {
+        setJoke(`${data.setup} ... ${data.delivery}`);
+      }
+    } catch (error) {
+      console.error("Failed to fetch joke.", error);
+      setJoke("Oops! Something went wrong");
+    }
+  };
+
   return (
     <div className="Joke">
       <h1>Do you want to hear a joke?</h1>
       <div className="buttons">
-        <button type="button">Yes</button>
-        <button type="button">No</button>
+        <button onClick={fetchJokes}>Yes</button>
+        <button onClick={() => setJoke("Maybe next time!")}>No</button>
       </div>
+      {joke && <p>{joke}</p>}
     </div>
   );
 }
