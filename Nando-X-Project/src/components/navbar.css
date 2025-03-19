@@ -26,8 +26,8 @@
   transition: color 0.3s ease; 
 }
 
-.navbar a:hover, .navbar span:hover {
-  color: #add8e6; /* Light blue on hover */
+.navbar a:hover {
+  color: #000000; /* Light blue on hover */
 }
 
 .dropdown-item {
@@ -38,16 +38,18 @@
 }
 
 .dropdown-item:hover {
-  background-color: #505050; /* Slightly lighter background on hover */
+  background: linear-gradient(90deg, #e95481, #5f5cff); /* Slightly lighter background on hover */
 }
 
 .dropdown-menu {
-  background: linear-gradient(90deg, #6ea2d7, #504ec7); /* Same gradient as navbar */
+  background: black; /* Same gradient as navbar */
   border: none; /* Remove border for seamless look */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Match navbar shadow */
 }
 
 .dropdown-item {
-  text-decoration: none; /* Remove underline */
-  background-color: black /* Same gradient as navbar */
+  background: black; /* Same gradient as navbar */
+  color: #f2f1f1; /* White text for dropdown items */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
