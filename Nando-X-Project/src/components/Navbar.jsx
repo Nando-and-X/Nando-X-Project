@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,12 +11,12 @@ function CollapsibleNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Nando-X</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Nando-X</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#forecast">Forecast</Nav.Link>
-            <Nav.Link href="#joke">Joke</Nav.Link>
+            <Nav.Link as={Link} to="/forecast-page">Forecast</Nav.Link>
+            <Nav.Link as={Link} to="/joke-page">Joke</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
                 GitHub Repo
