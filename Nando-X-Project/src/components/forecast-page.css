@@ -1,0 +1,60 @@
+/* Style the container to stack cards vertically */
+.forecast-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  padding: 20px;
+  gap: 15px; /* Add spacing between cards */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #1a1a1a; /* For Firefox */
+}
+
+/* Style for the cards */
+.forecast-card {
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  width: 100%; /* Make cards take full width */
+  max-width: 400px; /* Optional: Limit the card width */
+  margin: 0 auto; /* Center the cards horizontally */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Modern shadow */
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(145deg, #3a3a3a, #2c2c2c); /* Darker gradient */
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for cards */
+.forecast-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+/* Card title styling */
+.forecast-card .card-title {
+  font-size: 1.2rem; /* Slightly larger title text */
+  font-weight: bold;
+  color: #f0f0f0; /* Light text for contrast */
+  margin-bottom: 10px;
+}
+
+/* Card text styling */
+.forecast-card .card-text {
+  font-size: 0.9rem; /* Slightly larger text */
+  color: #dcdcdc; /* Light gray text for readability */
+  line-height: 1.6;
+}
+
+/* Optional: Customize the scrollbar for WebKit browsers */
+.forecast-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.forecast-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.forecast-container::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
